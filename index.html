@@ -10,43 +10,36 @@
             --dark-purple: #5a32a3;
             --text-black: #1a1a1a;
             --text-muted: #555;
-            --bg-gray: #f4f7f9;       
-            --bg-lavender: #f3f0ff;   
-            --bg-white: #ffffff;      
-        }
-
-        /* The FIX: Remove default margin from body and html */
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+            --bg-card: #fafafa;
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
             color: var(--text-black);
-            background-color: var(--bg-white);
-            display: flex;
-            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
         }
 
-        /* Hero Header Section */
-        .hero {
-            background-color: var(--bg-gray);
-            padding: 60px 20px;
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
             text-align: center;
-            border-bottom: 1px solid #e1e8ed;
+            padding: 40px 0;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid var(--primary-purple);
+            border: 3px solid var(--primary-purple);
             margin-bottom: 20px;
-            background-color: white;
         }
 
         h1 {
@@ -55,10 +48,11 @@
             color: var(--text-black);
         }
 
+        /* Fading Text Animation */
         .fade-container {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--primary-purple);
-            font-weight: 600;
+            font-weight: 500;
             height: 1.5rem;
         }
 
@@ -71,31 +65,26 @@
             opacity: 0 !important;
         }
 
-        .content-wrapper {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 50px 20px;
-            flex: 1; /* Pushes the connect section to the bottom if content is short */
-        }
-
         section {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         h2 {
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
-            margin-bottom: 25px;
-            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
         }
 
+        /* GPA Styling within Education */
         .gpa-text {
             color: var(--primary-purple);
             font-weight: 700;
-            margin-top: 10px;
+            margin-top: 8px;
             display: block;
         }
 
+        /* Skills Tags */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -103,58 +92,53 @@
         }
 
         .skill-tag {
-            background: white;
-            border: 1.5px solid var(--primary-purple);
+            background: #fff;
+            border: 1px solid var(--primary-purple);
             color: var(--primary-purple);
             padding: 8px 18px;
-            border-radius: 6px;
+            border-radius: 4px;
             font-weight: 500;
+            font-size: 0.95rem;
         }
 
+        /* Grid */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
         .card {
             border: 1px solid #eee;
-            border-top: 4px solid var(--primary-purple);
-            padding: 25px;
+            border-left: 4px solid var(--primary-purple);
+            padding: 20px;
             border-radius: 8px;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            background: var(--bg-card);
         }
 
-        /* The FIX: Added padding-bottom to ensure no white strip shows */
-        .connect-section {
-            background-color: var(--bg-lavender);
-            padding: 60px 20px;
-            text-align: center;
-            border-top: 1px solid #e8e4f5;
-            margin-top: auto; 
-        }
-
+        /* Connect Buttons */
         .connect-box {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .btn {
             background-color: var(--primary-purple);
             color: white;
-            padding: 14px 28px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 5px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-outline {
-            background-color: transparent;
+            background-color: white;
             color: var(--primary-purple);
             border: 2px solid var(--primary-purple);
         }
@@ -162,28 +146,27 @@
         .btn:hover {
             background-color: var(--dark-purple);
             color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(111, 66, 193, 0.2);
         }
 
         footer {
-            padding: 40px 0 0 0; /* Adjusted to sit flush */
-            font-size: 0.9rem;
-            color: #777;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #999;
+            padding: 60px 0;
         }
     </style>
 </head>
 <body>
 
-<header class="hero">
-    <img src="./Assets/ProfilePic.jpeg" alt="Fernando Hernandez" class="profile-img">
-    <h1>Fernando Hernandez</h1>
-    <div class="fade-container">
-        <span id="fade-text">Rutgers Business School</span>
-    </div>
-</header>
+<div class="container">
+    <header>
+        <img src="./Assets/ProfilePic.jpeg" alt="Fernando Hernandez" class="profile-img">
+        <h1>Fernando Hernandez</h1>
+        <div class="fade-container">
+            <span id="fade-text">Rutgers Business School</span>
+        </div>
+    </header>
 
-<div class="content-wrapper">
     <section id="about">
         <h2>Professional Summary</h2>
         <p>
@@ -197,8 +180,8 @@
         <h2>Education</h2>
         <div class="card">
             <h3 style="margin:0;">Bachelor of Science in Accounting</h3>
-            <p style="margin:5px 0; font-weight: 600;">Rutgers University – New Brunswick</p>
-            <p style="color:var(--text-muted); margin:0;">Expected Graduation: May 2027</p>
+            <p style="margin:5px 0; font-weight: 500;">Rutgers University – New Brunswick</p>
+            <p style="color:var(--text-muted); margin:0; font-size: 0.95rem;">Expected Graduation: May 2027</p>
             <span class="gpa-text">Cumulative GPA: 3.9 / 4.0</span>
         </div>
     </section>
@@ -220,38 +203,36 @@
         <div class="grid">
             <div class="card">
                 <h3 style="margin-top:0;">Intermediate Accounting</h3>
-                <p style="color:var(--text-muted); font-size: 0.95rem;">Advanced study of financial reporting standards and asset/liability valuation.</p>
+                <p style="font-size: 0.9rem; margin-bottom:0;">Advanced study of financial reporting standards and valuation.</p>
             </div>
             <div class="card">
                 <h3 style="margin-top:0;">Cost Accounting</h3>
-                <p style="color:var(--text-muted); font-size: 0.95rem;">Detailed analysis of budgeting, variance reporting, and internal cost management.</p>
+                <p style="font-size: 0.9rem; margin-bottom:0;">Budgeting, variance analysis, and internal cost management.</p>
             </div>
             <div class="card">
                 <h3 style="margin-top:0;">Accounting Info Systems</h3>
-                <p style="color:var(--text-muted); font-size: 0.95rem;">Integration of business processes with internal control and accounting software.</p>
+                <p style="font-size: 0.9rem; margin-bottom:0;">Managing financial data through business processes and software.</p>
             </div>
             <div class="card">
                 <h3 style="margin-top:0;">Computer Science</h3>
-                <p style="color:var(--text-muted); font-size: 0.95rem;">Foundational logic and algorithmic thinking applied to digital financial systems.</p>
+                <p style="font-size: 0.9rem; margin-bottom:0;">Foundational logic and algorithmic thinking for digital systems.</p>
             </div>
         </div>
     </section>
-</div>
 
-<section class="connect-section">
-    <div style="max-width: 850px; margin: 0 auto;">
+    <section id="connect">
         <h2>Connect With Me</h2>
-        <p>I am always open to discussing accounting opportunities, data analytics, or professional collaborations.</p>
         <div class="connect-box">
             <a href="./Assets/Resume.pdf" class="btn" target="_blank">View Resume</a>
             <a href="https://www.linkedin.com/in/fernando-hernandez-25023037a" class="btn btn-outline" target="_blank">LinkedIn</a>
             <a href="mailto:fh349@scarletmail.rutgers.edu" class="btn btn-outline">Email Me</a>
         </div>
-        <footer>
-            <p>&copy; 2026 Fernando Hernandez | Rutgers Business School</p>
-        </footer>
-    </div>
-</section>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Fernando Hernandez | Rutgers Business School</p>
+    </footer>
+</div>
 
 <script>
     const phrases = ["Rutgers Business School", "Accounting Student", "Dean's List Scholar", "Future CPA"];

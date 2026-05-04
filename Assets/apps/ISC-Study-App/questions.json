@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ISC-009",
+    "type": "MCQ",
+    "blueprint_area": "Area III: Considerations for System and Organization Controls (SOC) Engagements",
+    "topic": "Subservice Organizations",
+    "skill_level": "Application",
+    "difficulty": "Hard",
+    "question": "When a service organization uses a subservice organization and excludes the subservice organization's controls from the description of its system, which reporting method is being used?",
+    "options": [
+      "Inclusive method",
+      "Carve-out method",
+      "Complementary user entity control method",
+      "Type I method"
+    ],
+    "answer": "Carve-out method",
+    "explanation": "Under the carve-out method, the service organization's description of its system excludes the controls of the subservice organization. The inclusive method, by contrast, includes them.",
+    "references": "AICPA SOC 2 Guide"
+  },
+  {
+    "id": "ISC-010",
+    "type": "MCQ",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "Cloud Computing Models",
+    "skill_level": "Understanding",
+    "difficulty": "Easy",
+    "question": "In which cloud computing model does the cloud provider manage the underlying infrastructure, operating system, and middleware, while the customer manages only the applications and data?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Desktop as a Service (DaaS)"
+    ],
+    "answer": "Platform as a Service (PaaS)",
+    "explanation": "In a PaaS environment, the provider gives the customer a platform to develop and run applications without worrying about managing the underlying operating system or servers.",
+    "references": "NIST SP 800-145"
+  },
+  {
+    "id": "ISC-011",
+    "type": "MCQ",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Social Engineering Attacks",
+    "skill_level": "Understanding",
+    "difficulty": "Easy",
+    "question": "A targeted email attack directed at a specific high-level executive (such as a CEO) in an attempt to steal sensitive credentials is known as:",
+    "options": [
+      "Pharming",
+      "Vishing",
+      "Whaling",
+      "Smishing"
+    ],
+    "answer": "Whaling",
+    "explanation": "Whaling is a highly targeted phishing attack aimed specifically at senior executives or high-profile targets ('whales') within a company. It is a subset of spear phishing.",
+    "references": "ISACA CISA Review Manual"
+  },
+  {
+    "id": "ISC-012",
+    "type": "MCQ",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "Database Architecture",
+    "skill_level": "Remembering",
+    "difficulty": "Medium",
+    "question": "In a relational database, what is the term for a field in one table that uniquely identifies a row of another table, establishing a link between the two?",
+    "options": [
+      "Primary Key",
+      "Foreign Key",
+      "Candidate Key",
+      "Composite Key"
+    ],
+    "answer": "Foreign Key",
+    "explanation": "A foreign key is an attribute (or collection of attributes) in one table that uniquely identifies a row of another table, linking the data together across the relational database.",
+    "references": "COBIT 2019"
+  },
+  {
+    "id": "ISC-013",
+    "type": "MCQ",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Access Controls",
+    "skill_level": "Application",
+    "difficulty": "Medium",
+    "question": "Which security principle dictates that a user should only be granted the minimum level of access necessary to perform their specific job duties?",
+    "options": [
+      "Segregation of Duties",
+      "Defense in Depth",
+      "Principle of Least Privilege",
+      "Need-to-Know"
+    ],
+    "answer": "Principle of Least Privilege",
+    "explanation": "The Principle of Least Privilege ensures that users have exactly the permissions they need to do their jobs and no more, minimizing the risk of unauthorized actions or accidental damage.",
+    "references": "NIST SP 800-53"
+  },
+  {
+    "id": "ISC-014",
+    "type": "MCQ",
+    "blueprint_area": "Area III: Considerations for System and Organization Controls (SOC) Engagements",
+    "topic": "SOC 1 vs SOC 2",
+    "skill_level": "Understanding",
+    "difficulty": "Medium",
+    "question": "A client requests an audit report focusing specifically on the controls at a service organization that are relevant to the client's internal control over financial reporting (ICFR). Which report is appropriate?",
+    "options": [
+      "SOC 1",
+      "SOC 2",
+      "SOC 3",
+      "SOC for Cybersecurity"
+    ],
+    "answer": "SOC 1",
+    "explanation": "SOC 1 reports are specifically designed to address controls at a service organization that are relevant to user entities' internal control over financial reporting (ICFR). SOC 2 focuses on operational compliance (Trust Services Criteria).",
+    "references": "SSAE 18"
+  },
+  {
+    "id": "ISC-015",
+    "type": "MCQ",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "Backup and Recovery",
+    "skill_level": "Analysis",
+    "difficulty": "Hard",
+    "question": "An organization performs a full backup on Sunday night and incremental backups Monday through Wednesday. If the server fails on Thursday morning, which backup tapes are required to fully restore the system?",
+    "options": [
+      "Only the Sunday full backup and the Wednesday incremental backup.",
+      "Only the Wednesday incremental backup.",
+      "The Sunday full backup and all incremental backups from Monday, Tuesday, and Wednesday.",
+      "The Sunday full backup and the Tuesday and Wednesday incremental backups."
+    ],
+    "answer": "The Sunday full backup and all incremental backups from Monday, Tuesday, and Wednesday.",
+    "explanation": "Incremental backups only save data that has changed since the LAST backup of any kind. Therefore, to fully restore, you need the last full backup PLUS every sequential incremental backup leading up to the failure.",
+    "references": "NIST SP 800-34"
+  },
+  {
+    "id": "ISC-016",
+    "type": "MCQ",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Penetration Testing",
+    "skill_level": "Understanding",
+    "difficulty": "Medium",
+    "question": "In which type of penetration test is the ethical hacker provided with comprehensive knowledge of the target system, including architecture diagrams and source code, before the test begins?",
+    "options": [
+      "Black-box testing",
+      "White-box testing",
+      "Gray-box testing",
+      "Blind testing"
+    ],
+    "answer": "White-box testing",
+    "explanation": "In white-box (or clear-box) testing, the tester is given full knowledge of the internal structure and architecture of the system being tested. Black-box testing provides zero prior knowledge.",
+    "references": "NIST SP 800-115"
+  },
+  {
+    "id": "ISC-017",
+    "type": "TBS-Prompt",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Disaster Recovery Planning",
+    "skill_level": "Analysis",
+    "difficulty": "Hard",
+    "question": "Management has determined that their e-commerce website cannot lose more than 4 hours of transactional data in the event of an outage. What disaster recovery metric does this requirement represent?",
+    "options": [
+      "Recovery Time Objective (RTO)",
+      "Recovery Point Objective (RPO)",
+      "Maximum Tolerable Downtime (MTD)",
+      "Mean Time Between Failures (MTBF)"
+    ],
+    "answer": "Recovery Point Objective (RPO)",
+    "explanation": "RPO represents the maximum acceptable amount of data loss measured in time (e.g., how far back you have to go to restore data). RTO refers to the maximum acceptable amount of time the system itself can be down before being brought back online.",
+    "references": "ISO 22301"
+  },
+  {
+    "id": "ISC-018",
+    "type": "MCQ",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "System Development Life Cycle (SDLC)",
+    "skill_level": "Understanding",
+    "difficulty": "Easy",
+    "question": "Which software development methodology emphasizes short, iterative cycles, cross-functional teams, and continuous integration of user feedback?",
+    "options": [
+      "Waterfall",
+      "Agile",
+      "V-Model",
+      "Spiral"
+    ],
+    "answer": "Agile",
+    "explanation": "Agile methodology focuses on iterative, sprint-based development that embraces changing requirements and constant collaboration, in contrast to the rigid, linear progression of the Waterfall methodology.",
+    "references": "PMBOK / ISACA"
+  }
+]

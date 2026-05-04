@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPA ISC Study Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="app-container" id="app-container">
+        
+        <div id="home-screen" class="view-section">
+            <h1>CPA ISC Study Tool</h1>
+            <p>Select your study mode:</p>
+            
+            <button id="btn-quick-mix">🔀 Quick Mix (Random)</button>
+            
+            <div class="targeted-box">
+                <button id="btn-targeted">🎯 Targeted Session</button>
+                <select id="difficulty-select">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+            
+            <button id="btn-simulator">📈 CPA Simulator (Adaptive)</button>
+        </div>
+
+        <div id="quiz-screen" class="view-section hidden">
+            <div class="stats-header">
+                <span id="score-display">Score: 0%</span>
+                <span id="streak-display">🔥 Streak: 0</span>
+            </div>
+            
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question-text">Loading question...</h2>
+            
+            <div id="options-container"></div>
+            
+            <div id="explanation-box" class="hidden">
+                <strong>Explanation:</strong> <span id="explanation-text"></span>
+            </div>
+
+            <button id="next-btn" class="hidden">Next Question ➡️</button>
+        </div>
+
+        <div id="result-screen" class="view-section hidden">
+            <h1>Session Complete!</h1>
+            <h2 id="final-score">Final Score: 0%</h2>
+            <p id="result-message"></p>
+            <button id="btn-restart">🔄 Start New Session</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
