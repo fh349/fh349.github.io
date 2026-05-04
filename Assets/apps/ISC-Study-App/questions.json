@@ -1,5 +1,150 @@
 [
   {
+    "id": "ISC-001",
+    "type": "MCQ",
+    "blueprint_area": "Area III: Considerations for System and Organization Controls (SOC) Engagements",
+    "topic": "SOC 2 Trust Services Criteria",
+    "skill_level": "Application",
+    "difficulty": "Medium",
+    "question": "A service organization wants to demonstrate that its system is protected against unauthorized physical and logical access. Which Trust Services Category does this specific requirement fall under?",
+    "options": [
+      "Availability",
+      "Confidentiality",
+      "Security",
+      "Processing Integrity"
+    ],
+    "answer": "Security",
+    "explanation": "Security is the common criteria category that addresses whether a system is protected against unauthorized access (both physical and logical). Confidentiality refers to data protection, Availability to accessibility, and Processing Integrity to completeness/accuracy.",
+    "references": "AICPA TSP Section 100"
+  },
+  {
+    "id": "ISC-002",
+    "type": "MCQ",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Incident Response",
+    "skill_level": "Remembering and Understanding",
+    "difficulty": "Easy",
+    "question": "What is the primary objective of the 'containment' phase in an incident response plan?",
+    "options": [
+      "To completely eradicate the threat from the network.",
+      "To stop the incident from spreading and causing further damage.",
+      "To restore systems to normal operations.",
+      "To document lessons learned for future incidents."
+    ],
+    "answer": "To stop the incident from spreading and causing further damage.",
+    "explanation": "Containment focuses on isolating the threat (e.g., disconnecting compromised servers) so it cannot spread. Eradication comes after containment, followed by recovery, and finally lessons learned.",
+    "references": "NIST SP 800-61"
+  },
+  {
+    "id": "ISC-003",
+    "type": "TBS-Prompt",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "Data Management and Lifecycle",
+    "skill_level": "Analysis",
+    "difficulty": "Hard",
+    "question": "Match the appropriate data lifecycle stage (Creation, Storage, Use, Archival, Destruction) to the following scenario: 'The company transfers 7-year-old audit logs to an offline cold-storage tape drive.'",
+    "options": [
+      "Creation",
+      "Storage",
+      "Use",
+      "Archival",
+      "Destruction"
+    ],
+    "answer": "Archival",
+    "explanation": "Moving older, infrequently accessed data to offline or cold storage for compliance purposes is considered the Archival phase of the data lifecycle.",
+    "references": "COBIT 2019"
+  },
+  {
+    "id": "ISC-004",
+    "type": "MCQ",
+    "blueprint_area": "Area III: Considerations for System and Organization Controls (SOC) Engagements",
+    "topic": "SOC 2 Type I vs. Type II",
+    "skill_level": "Understanding",
+    "difficulty": "Medium",
+    "question": "A user entity requires assurance regarding the operating effectiveness of a service organization's controls over a six-month period. Which type of report should the user entity request?",
+    "options": [
+      "SOC 1 Type I",
+      "SOC 2 Type I",
+      "SOC 2 Type II",
+      "SOC 3"
+    ],
+    "answer": "SOC 2 Type II",
+    "explanation": "A Type II report evaluates both the design AND the operating effectiveness of controls over a specified period of time (e.g., six months). A Type I report only evaluates the design of controls at a specific point in time.",
+    "references": "AICPA SOC 2 Guide"
+  },
+  {
+    "id": "ISC-005",
+    "type": "MCQ",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "Change Management",
+    "skill_level": "Application",
+    "difficulty": "Hard",
+    "question": "Which of the following represents the most significant segregation of duties violation in a traditional IT change management environment?",
+    "options": [
+      "A systems analyst who designs the system also writes the code.",
+      "A programmer writes code and also moves the compiled program into the production environment.",
+      "A database administrator creates tables and also monitors database performance.",
+      "A network administrator installs firewalls and also configures routers."
+    ],
+    "answer": "A programmer writes code and also moves the compiled program into the production environment.",
+    "explanation": "To prevent unauthorized or malicious code from going live, developers/programmers should never have write access to the production environment. Migration to production should be handled by a separate IT operations or release management team.",
+    "references": "COBIT 2019 / ITGCs"
+  },
+  {
+    "id": "ISC-006",
+    "type": "MCQ",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Cryptography",
+    "skill_level": "Remembering",
+    "difficulty": "Easy",
+    "question": "In asymmetric encryption (Public Key Infrastructure), which key is used by the sender to encrypt a confidential message sent to a recipient?",
+    "options": [
+      "The sender's private key",
+      "The sender's public key",
+      "The recipient's private key",
+      "The recipient's public key"
+    ],
+    "answer": "The recipient's public key",
+    "explanation": "In asymmetric encryption, anyone can encrypt a message using the recipient's public key, but only the recipient can decrypt it using their corresponding private key.",
+    "references": "NIST SP 800-32"
+  },
+  {
+    "id": "ISC-007",
+    "type": "MCQ",
+    "blueprint_area": "Area II: Security, Confidentiality and Privacy",
+    "topic": "Logical Access Controls",
+    "skill_level": "Application",
+    "difficulty": "Medium",
+    "question": "An organization implements a policy where user permissions are granted based strictly on the user's job title and department rather than individual user accounts. What type of access control is this?",
+    "options": [
+      "Discretionary Access Control (DAC)",
+      "Mandatory Access Control (MAC)",
+      "Role-Based Access Control (RBAC)",
+      "Attribute-Based Access Control (ABAC)"
+    ],
+    "answer": "Role-Based Access Control (RBAC)",
+    "explanation": "RBAC assigns permissions to specific roles (e.g., 'HR Manager' or 'Staff Accountant') rather than to individuals. Users are then assigned to those roles, simplifying access management when employees change jobs or leave.",
+    "references": "NIST SP 800-192"
+  },
+  {
+    "id": "ISC-008",
+    "type": "TBS-Prompt",
+    "blueprint_area": "Area I: Information Systems and Data Management",
+    "topic": "System Development Life Cycle (SDLC)",
+    "skill_level": "Analysis",
+    "difficulty": "Hard",
+    "question": "During which phase of the System Development Life Cycle (SDLC) does user acceptance testing (UAT) typically occur?",
+    "options": [
+      "Planning and Feasibility",
+      "Systems Analysis and Design",
+      "Development",
+      "Testing and Implementation"
+    ],
+    "answer": "Testing and Implementation",
+    "explanation": "User Acceptance Testing (UAT) is the final testing phase where actual end-users verify that the system functions exactly as required in the business environment. This happens during the Testing/Implementation phase before the final go-live.",
+    "references": "ISACA CISA Review Manual"
+  },
+  {
     "id": "ISC-009",
     "type": "MCQ",
     "blueprint_area": "Area III: Considerations for System and Organization Controls (SOC) Engagements",
@@ -178,7 +323,7 @@
     "answer": "Agile",
     "explanation": "Agile methodology focuses on iterative, sprint-based development that embraces changing requirements and constant collaboration, in contrast to the rigid, linear progression of the Waterfall methodology.",
     "references": "PMBOK / ISACA"
-  }
+  },
   {
     "id": "ISC-019",
     "type": "MCQ",
@@ -358,7 +503,7 @@
     "answer": "SOC 3",
     "explanation": "A SOC 3 report is intended for general use. It reports on the same Trust Services Criteria as a SOC 2, but it omits the detailed description of tests and results, making it suitable for public marketing.",
     "references": "AICPA SOC 3 Framework"
-  }
+  },
   {
     "id": "ISC-029",
     "type": "MCQ",
