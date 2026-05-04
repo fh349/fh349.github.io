@@ -15,7 +15,6 @@
             --bg-white: #ffffff;      
         }
 
-        /* The FIX: Remove default margin from body and html */
         html, body {
             margin: 0;
             padding: 0;
@@ -75,7 +74,7 @@
             max-width: 850px;
             margin: 0 auto;
             padding: 50px 20px;
-            flex: 1; /* Pushes the connect section to the bottom if content is short */
+            flex: 1; 
         }
 
         section {
@@ -126,7 +125,11 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
 
-        /* The FIX: Added padding-bottom to ensure no white strip shows */
+        /* Project Card specific style */
+        .project-card {
+            text-align: center;
+        }
+
         .connect-section {
             background-color: var(--bg-lavender);
             padding: 60px 20px;
@@ -151,6 +154,8 @@
             border-radius: 6px;
             font-weight: 600;
             transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
         }
 
         .btn-outline {
@@ -167,7 +172,7 @@
         }
 
         footer {
-            padding: 40px 0 0 0; /* Adjusted to sit flush */
+            padding: 40px 0 0 0;
             font-size: 0.9rem;
             color: #777;
         }
@@ -236,18 +241,18 @@
             </div>
         </div>
     </section>
-</div>
+
     <section id="projects">
         <h2>Technical Projects</h2>
-        <div class="card" style="text-align: center; border-top: 4px solid var(--primary-purple);">
+        <div class="card project-card">
             <h3>CPA ISC Simulator</h3>
-            <p>A custom-built application designed to simulate Information Systems and Controls (ISC) exam scenarios, demonstrating the intersection of accounting logic and software development.</p>
+            <p>A custom-built application designed to simulate Information Systems and Controls (ISC) exam scenarios, demonstrating the intersection of accounting logic and technical implementation.</p>
             <div style="margin-top: 20px;">
-                <a href="/cpa-simulator/index.html" class="btn">Launch CPA ISC Simulator</a>
+                <a href="./Assets/apps/ISC-Study-App/index.html" class="btn">Launch CPA ISC Simulator</a>
             </div>
         </div>
     </section>
-</div> 
+</div>
 
 <section class="connect-section">
     <div style="max-width: 850px; margin: 0 auto;">
